@@ -20,6 +20,9 @@ export YC_CLOUD_ID=$(yc config get cloud-id)
 export YC_FOLDER_ID=$(yc config get folder-id)
 ```
 
+**Альтернативный способ**: Вместо использования переменных окружения YC_*, вы можете:
+- Использовать переменную окружения: `export TF_VAR_folder_id="your-folder-id"`
+
 2. Инициализируйте и примените конфигурацию:
 
 ```bash

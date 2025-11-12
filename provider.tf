@@ -14,7 +14,7 @@ terraform {
 }
 
 provider "yandex" {
-  folder_id = var.folder_id
+  folder_id = var.folder_id # Если null, провайдер использует YC_FOLDER_ID из окружения
   zone      = var.zone
 }
 

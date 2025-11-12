@@ -5,8 +5,9 @@ variable "name_prefix" {
 }
 
 variable "folder_id" {
-  description = "ID папки Yandex Cloud, где будут созданы ресурсы"
+  description = "ID папки Yandex Cloud, где будут созданы ресурсы. Может быть задан через переменную окружения YC_FOLDER_ID или TF_VAR_folder_id"
   type        = string
+  default     = null
 }
 
 variable "zone" {
